@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>RYTP NameGen</title>
+    <style id="webmakerstyle">
+        * {
+            background: darkslategray;
+            color: white;
+            font-family: monospace;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        function lul(i, j) {
+            j = prompt("какой ты RYTP хочеш? ");
+            let reversed = '';
+            document.write("<h1>", reverseString(j), i, "</h1>");
+        }
+        function reverseString(str) {
+            let reversed = '';
+            for (let i = str.length - 1; i >= 0; i--)
+                reversed += str[i];
+            return reversed;
+        }
+        lul(" RYTP", "");
+    </script>
+</body>
+
+</html>

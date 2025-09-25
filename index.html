@@ -1,23 +1,119 @@
-<!DOCTYPE HTML>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>RYTP NameGen</title>
-    <style id="webmakerstyle">
-    * {
-      background: darkslategray;
-      color: white;
-      font-family: monospace;
-    }
+
+<head>
+    <title>RYTP NameGen MENU</title>
+    <meta name="viewport" content="width=device-width initial-scale=.85">
+</head>
+
+<body>
+    <style type="text/css">
+        body {
+            background: rgb(32, 32, 32)
+        }
+
+        button {
+            border: none;
+            border-radius: 2px;
+            font-size: x-large;
+            padding: 10px 32px;
+            filter: drop-shadow(0px .216px .5px);
+        }
+
+        h1 {
+            color: white
+        }
+
+        .namegen {
+            transition: ease-out 64ms;
+            background: linear-gradient(rgb(0, 0, 255) 90%, rgb(0, 0, 244));
+        }
+
+        .reverse1 {
+            transition: ease-out 64ms;
+            background: linear-gradient(rgb(255, 69, 0) 90%, rgb(244, 64, 0));
+
+        }
+
+        .reverse2 {
+            transition: ease-out 64ms;
+            background: linear-gradient(rgb(0, 128, 128) 90%, rgb(0, 124, 124));
+
+        }
+
+        .true_reverse {
+            transition: ease-out 64ms;
+            background: linear-gradient(rgb(128, 0, 128) 90%, rgb(124, 0, 124));
+
+        }
+
+        .namegen_l {
+            color: white
+        }
+
+        .reverse1_l {
+            color: white
+        }
+
+        .reverse2_l {
+            color: white
+        }
+
+        .true_reverse_l {
+            color: white
+        }
+
+        .namegen:visited {
+            color: white
+        }
+
+        .reverse1:visited {
+            color: white
+        }
+
+        .reverse2:visited {
+            color: white
+        }
+
+        .true_reverse:visited {
+            color: white
+        }
+
+        .namegen:hover {
+            transition: ease-in 64ms;
+            border: solid 2px;
+            color: white;
+        }
+
+        .reverse1:hover {
+            transition: ease-in 64ms;
+            border: solid 2px;
+            color: white;
+        }
+
+        .reverse2:hover {
+            transition: ease-in 64ms;
+            border: solid 2px;
+            color: white;
+        }
+
+        .true_reverse:hover {
+            transition: ease-in 64ms;
+            border: solid 2px;
+            color: white;
+        }
     </style>
-  </head>
-  <body>
-    <script>
-      function lul (i, j) {
-        j = prompt("какой ты RYTP хочеш? ");
-        document.write("<h1>",j,i,"</h1>");
-      }
-      lul(" RYTP","");
-    </script>
-  </body>
+    <center>
+        <h1>RYTP NameGen MENU</h1>
+        <div class="buttons">
+            <p><button class="namegen"><a class="namegen_l" href="/namegen">СГЕНЕРИТЬ НАЗВАНИЕ</a></button></p>
+            <p><button class="reverse1"><a class="reverse1_l" href="/reverse1">СГЕНЕРИТЬ РЕВЕРС 1</a></button></p>
+            <p><button class="reverse2"><a class="reverse2_l" href="/reverse2">СГЕНЕРИТЬ РЕВЕРС 2</a></button></p>
+            <p><button class="true_reverse">
+                    <a class="true_reverse_l" href="/true_reverse">СГЕНЕРИТЬ ПОЛНЫЙ РЕВЕРС</a>
+                </button>
+            </p>
+        </div>
+    </center>
+</body>
+
 </html>
