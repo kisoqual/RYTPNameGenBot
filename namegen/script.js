@@ -6,6 +6,6 @@ function lul(i, j) {
         navigator.clipboard.writeText("#ники@futurepooqs #название@futurepooqs ", j, i)
         alert('Скопировано!')
         //cBtn.innerHTML = "<button id="copyBtn">Скопировано!</button>"
-    }
+    })
 }
 lul(" RYTP", "");
