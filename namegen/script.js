@@ -4,7 +4,8 @@ function lul(i, j) {
     document.write("<h1>#ники@futurepooqs #название@futurepooqs<br>", j, i, "</h1>");
     cBtn.addEventListener('click', () => {
         navigator.clipboard.writeText("#ники@futurepooqs #название@futurepooqs ", j, i)
-        cBtn.innerHTML = "<button id="copyBtn">Скопировано!</button>"
+        alert('Скопировано!')
+        //cBtn.innerHTML = "<button id="copyBtn">Скопировано!</button>"
     }
 }
 lul(" RYTP", "");
